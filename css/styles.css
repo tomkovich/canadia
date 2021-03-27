@@ -129,6 +129,7 @@ p {
   justify-content: space-between;
   padding-top: 20px;
   align-items: center;
+  position: relative;
 }
 
 .section .header .search form {
@@ -192,7 +193,7 @@ p {
 }
 
 .section .section_title h1 {
-  font-size: 70px;
+  font-size: 4.2vw;
   font-weight: 700;
   max-width: 690px;
 }
@@ -446,6 +447,7 @@ p {
   margin-bottom: 40px;
   width: 885px;
   margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .menus ul {
@@ -483,4 +485,36 @@ p {
   font-size: 13px;
   font-weight: 500;
   color: #c8c8c8;
+}
+
+.header_block__hamburger {
+  width: 45px;
+  height: 30px;
+  display: none;
+  margin-left: auto;
+  padding-top: 20px;
+}
+
+.header_block__hamburger span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: relative;
+  transition: transform .3s;
+}
+
+.header_block__hamburger span::before,
+.header_block__hamburger span::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: 6px;
+}
+
+.header_block__hamburger span::after {
+  top: 12px;
 }
